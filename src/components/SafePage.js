@@ -58,10 +58,10 @@ function SafePage() {
         </Col>
         <Col>
           <Row>
-            <Display />
+          <Display pin={pin} />
           </Row>
           <Row className="justify-content-center">
-            <Indicator />
+          <Indicator unlock={unlock} />
           </Row>
         </Col>
       </Row>

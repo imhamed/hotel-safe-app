@@ -1,5 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import PropTypes from "prop-types";
+
 
 function Keyboard({handleNum, handleCLR, handleENT}) {
   return (
@@ -31,5 +33,12 @@ function Keyboard({handleNum, handleCLR, handleENT}) {
     </Container>
   );
 }
+
+Keyboard.propTypes = {
+  handleNum: PropTypes.func.isRequired,
+  handleCLR: PropTypes.func.isRequired,
+  handleENT: PropTypes.func.isRequired,
+
+};
 
 export default Keyboard;
