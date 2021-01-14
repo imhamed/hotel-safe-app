@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Display from "./Display";
 import Keyboard from "./Keyboard";
 import Indicator from "./Indicator";
+import { toast } from "react-toastify";
 import "./SafePage.css";
 
 function SafePage() {
@@ -16,6 +17,7 @@ function SafePage() {
       setPin(num + e.target.id);
     }
   }
+
   function handleCLR() {
     setPin("");
   }
@@ -28,11 +30,14 @@ function SafePage() {
     }
     setPin("");
   }
+
   function lockSafe() {
     if (pin.length === 4) {
       setCorrectPin(pin);
       setUnlock(false);
+      toast.info("Safe is locked!");
     } else {
+      toast.warning("PIN has to be 4 digit!");
     }
   }
 
@@ -40,9 +45,12 @@ function SafePage() {
     if (pin.length === 4) {
       if (pin === correctPin) {
         setUnlock(true);
+        toast.success("Safe is Unlock!");
       } else {
+        toast.error("invalid PIN!");
       }
     } else {
+      toast.warning("PIN has to be 4 digit!");
     }
   }
 
@@ -58,10 +66,10 @@ function SafePage() {
         </Col>
         <Col>
           <Row>
-          <Display pin={pin} />
+            <Display pin={pin} />
           </Row>
           <Row className="justify-content-center">
-          <Indicator unlock={unlock} />
+            <Indicator unlock={unlock} />
           </Row>
         </Col>
       </Row>
