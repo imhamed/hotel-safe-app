@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/hotel-safe-app/static/css/main.8ab73175.chunk.css",
+    "main.css": "/hotel-safe-app/static/css/main.4f97b91e.chunk.css",
     "main.js": "/hotel-safe-app/static/js/main.ae264b65.chunk.js",
     "main.js.map": "/hotel-safe-app/static/js/main.ae264b65.chunk.js.map",
     "runtime-main.js": "/hotel-safe-app/static/js/runtime-main.92e91ee8.js",
@@ -12,14 +12,14 @@
     "static/js/3.f4d1fc99.chunk.js.map": "/hotel-safe-app/static/js/3.f4d1fc99.chunk.js.map",
     "index.html": "/hotel-safe-app/index.html",
     "static/css/2.505d8e97.chunk.css.map": "/hotel-safe-app/static/css/2.505d8e97.chunk.css.map",
-    "static/css/main.8ab73175.chunk.css.map": "/hotel-safe-app/static/css/main.8ab73175.chunk.css.map",
+    "static/css/main.4f97b91e.chunk.css.map": "/hotel-safe-app/static/css/main.4f97b91e.chunk.css.map",
     "static/js/2.e7bc19d5.chunk.js.LICENSE.txt": "/hotel-safe-app/static/js/2.e7bc19d5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.92e91ee8.js",
     "static/css/2.505d8e97.chunk.css",
     "static/js/2.e7bc19d5.chunk.js",
-    "static/css/main.8ab73175.chunk.css",
+    "static/css/main.4f97b91e.chunk.css",
     "static/js/main.ae264b65.chunk.js"
   ]
 }
