@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/hotel-safe-app/static/css/main.5c16fb1b.chunk.css",
-    "main.js": "/hotel-safe-app/static/js/main.e2cb4db0.chunk.js",
-    "main.js.map": "/hotel-safe-app/static/js/main.e2cb4db0.chunk.js.map",
+    "main.css": "/hotel-safe-app/static/css/main.966eff3a.chunk.css",
+    "main.js": "/hotel-safe-app/static/js/main.33f3e9f8.chunk.js",
+    "main.js.map": "/hotel-safe-app/static/js/main.33f3e9f8.chunk.js.map",
     "runtime-main.js": "/hotel-safe-app/static/js/runtime-main.9387ebcc.js",
     "runtime-main.js.map": "/hotel-safe-app/static/js/runtime-main.9387ebcc.js.map",
     "static/css/2.505d8e97.chunk.css": "/hotel-safe-app/static/css/2.505d8e97.chunk.css",
@@ -12,14 +12,14 @@
     "static/js/3.596bf73a.chunk.js.map": "/hotel-safe-app/static/js/3.596bf73a.chunk.js.map",
     "index.html": "/hotel-safe-app/index.html",
     "static/css/2.505d8e97.chunk.css.map": "/hotel-safe-app/static/css/2.505d8e97.chunk.css.map",
-    "static/css/main.5c16fb1b.chunk.css.map": "/hotel-safe-app/static/css/main.5c16fb1b.chunk.css.map",
+    "static/css/main.966eff3a.chunk.css.map": "/hotel-safe-app/static/css/main.966eff3a.chunk.css.map",
     "static/js/2.759fc71a.chunk.js.LICENSE.txt": "/hotel-safe-app/static/js/2.759fc71a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.9387ebcc.js",
     "static/css/2.505d8e97.chunk.css",
     "static/js/2.759fc71a.chunk.js",
-    "static/css/main.5c16fb1b.chunk.css",
-    "static/js/main.e2cb4db0.chunk.js"
+    "static/css/main.966eff3a.chunk.css",
+    "static/js/main.33f3e9f8.chunk.js"
   ]
 }
