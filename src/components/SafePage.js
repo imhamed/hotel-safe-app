@@ -4,7 +4,6 @@ import Display from "./Display";
 import Keyboard from "./Keyboard";
 import Indicator from "./Indicator";
 import { toast } from "react-toastify";
-import "./SafePage.css";
 
 function SafePage() {
   const [pin, setPin] = useState("");
@@ -12,14 +11,17 @@ function SafePage() {
   const [unlock, setUnlock] = useState(true);
 
   function handleNum(e) {
-    const num = pin;
     if (pin.length < 4) {
-      setPin(num + e.target.id);
+      setPin((prevState) => {
+        return prevState + e.target.id;
+      });
     }
   }
 
   function handleCLR() {
-    setPin("");
+    setPin((prevState) => {
+      return "";
+    });
   }
 
   function handleENT() {
@@ -28,7 +30,9 @@ function SafePage() {
     } else {
       unlockSafe();
     }
-    setPin("");
+    setPin((prevState) => {
+      return "";
+    });
   }
 
   function lockSafe() {
@@ -37,7 +41,7 @@ function SafePage() {
       setUnlock(false);
       toast.info("Safe is locked!");
     } else {
-      toast.warning("PIN has to be 4 digit!");
+      toast.warning("PIN has to be 4 digit! Try again!");
     }
   }
 
@@ -45,17 +49,17 @@ function SafePage() {
     if (pin.length === 4) {
       if (pin === correctPin) {
         setUnlock(true);
-        toast.success("Safe is Unlock!");
+        toast.success("Safe is Unlocked!");
       } else {
-        toast.error("invalid PIN!");
+        toast.error("invalid PIN! Try again!");
       }
     } else {
-      toast.warning("PIN has to be 4 digit!");
+      toast.warning("PIN has to be 4 digit! Try again!");
     }
   }
 
   return (
-    <Container className="main-container">
+    <Container className="safe-container">
       <Row>
         <Col>
           <Keyboard
