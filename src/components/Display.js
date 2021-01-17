@@ -5,7 +5,7 @@ function Display({ pin }) {
   return (
     <>
       <div className="display">
-        <h1 className="number-display">{pin}</h1>
+        <h1 className="number-display" data-testid="pin-display">{pin}</h1>
       </div>
     </>
   );
